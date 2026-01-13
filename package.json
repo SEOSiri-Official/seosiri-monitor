@@ -1,0 +1,11 @@
+{
+  "name": "seosiri-monitor-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy:client": "npm run build --prefix client && gh-pages -d client/dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}

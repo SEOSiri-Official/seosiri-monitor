@@ -1,0 +1,191 @@
+[
+  {
+    "url": "seosiri.com",
+    "email": "www.seosiri@gmail.com",
+    "userEmail": "www.seosiri@gmail.com",
+    "userName": "Momenul Ahmad",
+    "reportId": "seosiri-com",
+    "verified": true,
+    "token": "seosiri-4da1f583",
+    "verifiedAt": "2026-01-11T10:52:10.681Z",
+    "external": [
+      {
+        "source": "https://www.hao123.com",
+        "type": "🌐 General Web",
+        "da": 40,
+        "value": "$20",
+        "status": "🟢 LIVE"
+      },
+      {
+        "source": "https://www.hao123.com",
+        "type": "🌐 General Web",
+        "da": 40,
+        "value": "$20",
+        "status": "LIVE"
+      },
+      {
+        "source": "https://medium.com/tech-startup/example-post",
+        "type": "📰 Publishing",
+        "da": 92,
+        "value": 450,
+        "status": "LOST"
+      },
+      {
+        "source": "https://www.forbes.com/sites/startup/review",
+        "type": "📰 News Media",
+        "da": 95,
+        "value": 800,
+        "status": "LIVE"
+      },
+      {
+        "source": "https://github.com/example-repo/project",
+        "type": "💻 Code Repo",
+        "da": 94,
+        "value": 500,
+        "status": "UNSTABLE"
+      },
+      {
+        "source": "https://www.producthunt.com/posts/your-product",
+        "type": "🚀 SaaS Directory",
+        "da": 90,
+        "value": 700,
+        "status": "LIVE"
+      },
+      {
+        "source": "https://medium.com/tech-startup/example-post",
+        "type": "📰 Publishing",
+        "da": 92,
+        "value": 450,
+        "status": "LOST"
+      },
+      {
+        "source": "https://www.forbes.com/sites/startup/review",
+        "type": "📰 News Media",
+        "da": 95,
+        "value": 800,
+        "status": "LIVE"
+      },
+      {
+        "source": "https://github.com/example-repo/project",
+        "type": "💻 Code Repo",
+        "da": 94,
+        "value": 500,
+        "status": "UNSTABLE"
+      },
+      {
+        "source": "https://www.producthunt.com/posts/your-product",
+        "type": "🚀 SaaS Directory",
+        "da": 90,
+        "value": 700,
+        "status": "LIVE"
+      }
+    ],
+    "internal": [
+      {
+        "url": "https://www.seosiri.com",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/api-validator.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/codemender-ia.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/prod-personaflow-ia.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/ai-seo-tool.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/courses.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/exams.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/guest-post.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/product-review-service.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/2023/07/digital-marketing-services.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/2026/01/ai-authority-voice-search.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/p/about.html",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search/label/AI%20Search%20Optimization",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search/label/Semantic%20SEO",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search/label/Technical%20SEO",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/2026/01/ai-authority-voice-search.html#comment-form",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search/label/Link%20Building",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search/label/Digital%20Marketing",
+        "status": "✅ OK",
+        "code": 200
+      },
+      {
+        "url": "https://www.seosiri.com/search?updated-max=2026-01-07T07:21:00-08:00&max-results=1",
+        "status": "✅ OK",
+        "code": 200
+      }
+    ],
+    "stats": {
+      "externalLinks": 10,
+      "internalLinks": 20,
+      "brokenLinks": 0
+    }
+  }
+]
