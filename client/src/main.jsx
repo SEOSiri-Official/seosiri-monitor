@@ -11,17 +11,17 @@ import { AuthProvider } from './AuthContext.jsx';
 
 import './index.css';
 
+// This logic checks if we are in production (GitHub Pages) or development (localhost)
+const basename = import.meta.env.PROD ? '/seosiri-monitor' : '/';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* --- THIS IS THE FINAL FIX --- */}
-    <BrowserRouter basename="/seosiri-monitor">
-      {/* 1. The AuthProvider wraps everything */}
+    {/* --- THE FIX IS HERE --- */}
+    <BrowserRouter basename={basename}>
       <AuthProvider> 
         <Routes>
-          {/* 2. The /login route is public */}
           <Route path="/login" element={<Login />} />
           
-          {/* 3. The main dashboard is protected */}
           <Route 
             path="/" 
             element={
@@ -31,7 +31,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             } 
           />
           
-          {/* 4. The report page is also protected */}
           <Route 
             path="/report/:id" 
             element={
