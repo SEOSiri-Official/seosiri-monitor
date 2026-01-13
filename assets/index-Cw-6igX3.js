@@ -74,4 +74,4 @@ Error generating stack: `+o.message+`
               0% { transform: rotate(0deg); }
               100% { transform: rotate(360deg); }
             }
-          `}),d.jsx("p",{style:{color:"#666"},children:"Loading..."})]})}):t?e:d.jsx(Dm,{to:"/login",replace:!0})}Mo.createRoot(document.getElementById("root")).render(d.jsx(La.StrictMode,{children:d.jsx(Hm,{children:d.jsx(wy,{children:d.jsxs($m,{children:[d.jsx(cl,{path:"/login",element:d.jsx(Cy,{})}),d.jsx(cl,{path:"/",element:d.jsx(Sa,{children:d.jsx(ky,{})})}),d.jsx(cl,{path:"/report/:id",element:d.jsx(Sa,{children:d.jsx(Ey,{})})})]})})})}));
+          `}),d.jsx("p",{style:{color:"#666"},children:"Loading..."})]})}):t?e:d.jsx(Dm,{to:"/login",replace:!0})}Mo.createRoot(document.getElementById("root")).render(d.jsx(La.StrictMode,{children:d.jsx(Hm,{basename:"/seosiri-monitor",children:d.jsx(wy,{children:d.jsxs($m,{children:[d.jsx(cl,{path:"/login",element:d.jsx(Cy,{})}),d.jsx(cl,{path:"/",element:d.jsx(Sa,{children:d.jsx(ky,{})})}),d.jsx(cl,{path:"/report/:id",element:d.jsx(Sa,{children:d.jsx(Ey,{})})})]})})})}));
