@@ -10,13 +10,16 @@ export default defineConfig(({ command }) => {
     // Development configuration
     return {
       plugins: [react()],
-      // No 'base' property needed for local dev
+      // No 'base' property needed for local dev, this is correct.
     }
   } else {
     // Production configuration
     return {
       plugins: [react()],
-      base: '/seosiri-monitor/', // The base path for GitHub Pages
+      // --- THIS IS THE FIX ---
+      // 'base' is no longer needed because you are using a custom domain.
+      // Remove this line entirely:
+      // base: '/seosiri-monitor/', 
     }
   }
 })
