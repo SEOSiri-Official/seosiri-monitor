@@ -17,7 +17,7 @@ const basename = import.meta.env.PROD ? '/seosiri-monitor' : '/';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* --- THE FIX IS HERE --- */}
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <AuthProvider> 
         <Routes>
           <Route path="/login" element={<Login />} />
