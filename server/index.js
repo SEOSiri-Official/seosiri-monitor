@@ -21,8 +21,8 @@ app.use(express.json());
 
 // CORS Configuration (Important for OAuth)
 app.use(cors({
-  origin: 'http://localhost:5173', // Your React app URL
-  credentials: true // Allow cookies
+  origin: ["http://localhost:5173", "https://monitor.seosiri.com"],
+  credentials: true
 }));
 
 // Session Configuration
