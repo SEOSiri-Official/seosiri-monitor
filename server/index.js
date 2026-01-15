@@ -19,7 +19,7 @@ const MongoStore = require('connect-mongo');
 // ============================================
 app.use(cookieParser());
 app.use(express.json());
-
+app.set('trust proxy', 1);
 // CORS Configuration (Important for OAuth)
 app.use(cors({
   origin: ["http://localhost:5173", "https://monitor.seosiri.com"],
@@ -27,17 +27,23 @@ app.use(cors({
 }));
 
 // Session Configuration
-app.use(session({
-  secret: process.env.SESSION_SECRET || 'seosiri-secret-key-change-in-production',
+const sessionConfig = {
+  secret: process.env.SESSION_SECRET || 'a-very-strong-secret-key-that-you-should-change',
   resave: false,
   saveUninitialized: false,
+  store: MongoStore.create({ // 3. USE MONGO FOR SESSION STORAGE
+    mongoUrl: process.env.MONGO_URI,
+    collectionName: 'sessions'
+  }),
   cookie: {
-    secure: false, // Set to true in production with HTTPS
-    httpOnly: true,
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
   }
-}));
+};
 
+if (process.env.NODE_ENV === 'production') {
+  sessionConfig.cookie.secure = true;   // a. Only send cookie over HTTPS
+  sessionConfig.cookie.sameSite = 'none'; // b. Allow cross-domain cookies
+}
 // Initialize Passport
 app.use(passport.initialize());
 app.use(passport.session());
