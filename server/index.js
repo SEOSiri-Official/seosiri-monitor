@@ -439,11 +439,11 @@ app.post('/api/subscribe', isAuthenticated, async (req, res) => {
             <h2 style="color: #2e7d32;">✅ Site Verified & Scanned!</h2>
             <p>Hi ${req.user.name},</p>
             <p>Your comprehensive SEO report is ready.</p>
-            <a href="http://localhost:5173/report/${reportId}" 
-               style="display: inline-block; background: #000; color: #fff; padding: 12px 24px; 
-                      text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold;">
-              View Full Report →
-            </a>
+            <a href="${process.env.CLIENT_URL || 'http://localhost:5173'}/report/${reportId}" 
+         style="display: inline-block; background: #000; color: #fff; padding: 12px 24px; 
+                text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold;">
+        View Full Report →
+      </a>
           </div>
         `, 
       });
@@ -456,11 +456,11 @@ app.post('/api/subscribe', isAuthenticated, async (req, res) => {
     // Send Push
     if (subscription) {
       try {
-        const payload = JSON.stringify({ 
-          title: 'SEOSiri Alert 🕷️', 
-          body: `Your SEO report is ready!`,
-          url: `http://localhost:5173/report/${reportId}`
-        });
+       const payload = JSON.stringify({ 
+      title: 'SEOSiri Alert 🕷️', 
+      body: `Your SEO report is ready!`,
+      url: `${process.env.CLIENT_URL || 'http://localhost:5173'}/report/${reportId}`
+    });
         await webpush.sendNotification(subscription, payload);
       } catch (err) {
         console.error("❌ Push Failed:", err.message);
