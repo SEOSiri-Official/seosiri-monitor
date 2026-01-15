@@ -31,10 +31,10 @@ const sessionConfig = {
   secret: process.env.SESSION_SECRET || 'a-very-strong-secret-key-that-you-should-change',
   resave: false,
   saveUninitialized: false,
-  store: MongoStore.create({ // 3. USE MONGO FOR SESSION STORAGE
+  store: new MongoStore({
     mongoUrl: process.env.MONGO_URI,
     collectionName: 'sessions'
-  }),
+}),
   cookie: {
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
   }
