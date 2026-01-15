@@ -222,7 +222,7 @@ app.get('/auth/google/callback',
   passport.authenticate('google', { failureRedirect: 'http://localhost:5173/login' }),
   (req, res) => {
     // Successful authentication, redirect to home
-    res.redirect(process.env.CLIENT_URL || 'http://localhost:5173');
+res.redirect((process.env.CLIENT_URL || 'http://localhost:5173') + '/');
   }
 );
 
