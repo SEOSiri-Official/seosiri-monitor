@@ -1,3 +1,5 @@
+const { File } = require('undici');
+global.File = File;
 require('dotenv').config({ path: require('path').resolve(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
@@ -5,6 +7,7 @@ const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const cookieParser = require('cookie-parser');
+
 const webpush = require('web-push');
 const nodemailer = require('nodemailer');
 const { verifySiteOwnership } = require('./crawler_engine');
