@@ -31,7 +31,7 @@ const sessionConfig = {
   secret: process.env.SESSION_SECRET || 'a-very-strong-secret-key-that-you-should-change',
   resave: false,
   saveUninitialized: false,
-  store: new MongoStore({
+  store: MongoStore.create({
     mongoUrl: process.env.MONGO_URI,
     collectionName: 'sessions'
 }),
