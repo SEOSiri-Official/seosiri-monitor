@@ -1,5 +1,3 @@
-const { File } = require('undici');
-global.File = File;
 require('dotenv').config({ path: require('path').resolve(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
